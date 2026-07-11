@@ -1,46 +1,44 @@
-pub pi() out float
+// solstd/math/math.sol
+
+pi() out float
     return 3.14159265
 
-pub fabs(float x) out float
+e() out float
+    return 2.71828183
+
+tau() out float
+    return 6.28318531
+
+absf(float x) out float
     if x < 0.0
         return -x
     return x
 
-pub max(float a, float b) out float
+max(float a, float b) out float
     if a > b
         return a
     return b
 
-pub min(float a, float b) out float
+min(float a, float b) out float
     if a < b
         return a
     return b
 
-pub clamp(float x, float lo, float hi) out float
+clamp(float x, float lo, float hi) out float
     if x < lo
         return lo
     if x > hi
         return hi
+    return x
 
-pub lerp(float a, float b, float t) out float
+lerp(float a, float b, float t) out float
     return a + (b - a) * t
-    
-pub fsqrt(float x) out float
+
+fsqrt(float x) out float
     float r -> 0.0
     C -> "r = sqrtf(x);"
     return r
 
-pub fsin(float x) out float
+fsin(float x) out float
     float r -> 0.0
     C -> "r = sinf(x);"
-    return r
-
-pub fcos(float x) out float
-    float r -> 0.0
-    C -> "r = cosf(x);"
-    return r
-
-pub fatan2(float x, float y) out float
-    float r -> 0.0
-    C -> "r = atan2f(x, y);"
-    return r
