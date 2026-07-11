@@ -21,6 +21,7 @@ pub clamp(float x, float lo, float hi) out float
         return lo
     if x > hi
         return hi
+
 pub lerp(float a, float b, float t) out float
     return a + (b - a) * t
     
