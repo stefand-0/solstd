@@ -1,7 +1,7 @@
 pub pi() out float
     return 3.14159265
 
-pub abs(float x) out float
+pub fabs(float x) out float
     if x < 0.0
         return -x
     return x
@@ -25,22 +25,22 @@ pub clamp(float x, float lo, float hi) out float
 pub lerp(float a, float b, float t) out float
     return a + (b - a) * t
     
-pub sqrt(float x) out float
+pub fsqrt(float x) out float
     float r -> 0.0
     C -> "r = sqrtf(x);"
     return r
 
-pub sin(float x) out float
+pub fsin(float x) out float
     float r -> 0.0
     C -> "r = sinf(x);"
     return r
 
-pub cos(float x) out float
+pub fcos(float x) out float
     float r -> 0.0
     C -> "r = cosf(x);"
     return r
 
-pub atan2(float x, float y) out float
+pub fatan2(float x, float y) out float
     float r -> 0.0
     C -> "r = atan2f(x, y);"
     return r
