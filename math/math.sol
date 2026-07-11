@@ -9,7 +9,7 @@ e() out float
 tau() out float
     return 6.28318531
 
-absf(float x) out float
+abs_f(float x) out float
     if x < 0.0
         return -x
     return x
