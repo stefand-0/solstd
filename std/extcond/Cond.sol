@@ -5,3 +5,23 @@ when(a, b, action)
     a == b ? _return -> action
   end
 end
+
+forif(f, check1, check2, op, out)
+  for i -> 0 to f
+    if op = "="
+      if check1 = check2
+        return out
+      end
+    end
+    if op = "<"
+      if check1 < check2
+        return out
+      end
+    end
+    if op = ">"
+      if check1 > check2
+        return out
+      end
+    end
+  end 
+end
