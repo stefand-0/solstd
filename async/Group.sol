@@ -4,3 +4,10 @@ launch(function, amount, returnval)
   end
   _return -> returnval
 end
+
+delaylaunch(ms, function, amount, famount, returnval)
+  for i -> 0 to famount
+    launch(function, amount, returnval)
+    _sleep(ms)
+  end
+end
