@@ -15,6 +15,6 @@ end
 
 awhen(a, b, out)
   _get("std/extcond/Cond.sol")
-  _out -> Cond.while(1, 2, out)
+  _out -> Cond.when(1, 2, out)
 ; Loop.awhen(1,1,"Hello")
 end
